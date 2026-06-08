@@ -7,11 +7,13 @@ import org.jsp.SpringBootUserCrud.dao.UserDAO;
 import org.jsp.SpringBootUserCrud.dto.UserEntity;
 import org.jsp.SpringBootUserCrud.exception.UserAlreadyExistsException;
 import org.jsp.SpringBootUserCrud.exception.UserNotFoundException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
 
+	@Autowired
 	private UserDAO dao;
 
 	public UserEntity saveUser(UserEntity user) {

@@ -1,10 +1,12 @@
 package org.jsp.SpringBootUserCrud.dto;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
 public class UserEntity {
 
+	@Id
 	private int id;
 	private String name;
 	private String email;

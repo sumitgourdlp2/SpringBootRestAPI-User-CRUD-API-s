@@ -5,11 +5,13 @@ import java.util.Optional;
 
 import org.jsp.SpringBootUserCrud.dto.UserEntity;
 import org.jsp.SpringBootUserCrud.repository.UserRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public class UserDAO {
 
+	@Autowired
 	private UserRepo repo;
 
 	public UserEntity saveUser(UserEntity user) {
